@@ -1,0 +1,74 @@
+:root {
+  --md-admonition-icon--diagram: "account_tree";
+  --md-admonition-icon--lamb: "lightbulb";
+}
+  .md-typeset .admonition:is(.diagram, .رسم, .شكل),
+  .md-typeset details:is(.diagram, .رسم, .شكل){
+    border-color: rgb(96 125 139);
+  }
+
+  .md-typeset .admonition:is(.diagram, .رسم, .شكل).center,
+  .md-typeset details:is(.diagram, .رسم, .شكل).center {
+    width: fit-content;
+    margin: auto;
+  }
+
+
+  .md-typeset :is(.diagram, .رسم, .شكل) > .admonition-title,
+  .md-typeset :is(.diagram, .رسم, .شكل) > summary {
+    background-color: rgba(96, 125, 139, 0.1);
+    border-color: rgb(96 125 139);
+  }
+  .md-typeset :is(.diagram, .رسم, .شكل) > .admonition-title::before,
+  .md-typeset :is(.diagram, .رسم, .شكل)> summary::before {
+    color: rgb(96 125 139);
+    content: var(--md-admonition-icon--diagram);
+  }
+  .md-typeset :is(.admonition, details):is(.diagram, .رسم, .شكل) {
+    page-break-inside: avoid;
+  }
+  .md-typeset .admonition:is(.diagram, .رسم, .شكل) > .mermaid > *,
+  .md-typeset details:is(.diagram, .رسم, .شكل) > .mermaid > *{
+    margin: auto;
+    display: block;
+    width: 111%;
+
+  }
+
+  .md-typeset .admonition:is(.diagram, .رسم, .شكل) .imcenter,
+  .md-typeset details:is(.diagram, .رسم, .شكل) .imcenter {
+    display: block;
+    margin: auto;
+  }
+
+  .md-typeset .admonition:is(.lamb, .تلميح),
+  .md-typeset details:is(.lamb, .تلميح) {
+    border-color: rgb(251 192 45);
+  }
+
+  .md-typeset :is(.lamb, .تلميح) > .admonition-title,
+  .md-typeset :is(.lamb, .تلميح) > summary {
+    background-color: rgba(251, 192, 45, 0.3);
+    border-color: rgb(251 192 45);
+  }
+  .md-typeset :is(.lamb, .تلميح) > .admonition-title::before,
+  .md-typeset :is(.lamb, .تلميح) > summary::before {
+    color: rgb(30 136 229);
+    content: var(--md-admonition-icon--lamb);
+  }
+
+  .avoid {
+    page-break-inside: avoid !important;
+  }
+
+
+  .md-typeset .admonition:is(.cen_title, .توسيط_العنوان) .admonition-title,
+  .md-typeset details:is(.cen_title, .توسيط_العنوان) .admonition-title{
+    text-align: center;
+  }
+
+  .md-typeset .admonition:is(.wid_table, .توسيع_الجدول) table,
+  .md-typeset details:is(.wid_table, .توسيع_الجدول) table{
+    width: 100%;
+    font-size: 0.76rem;
+  }
