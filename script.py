@@ -75,7 +75,7 @@ md = markdown.Markdown(extensions=['def_list', 'attr_list', 'tables',
                                    'pymdownx.superfences', 'pymdownx.b64', 'pymdownx.caret',
                                    'pymdownx.critic', 'pymdownx.details', 'pymdownx.emoji',
                                    'pymdownx.keys', 'pymdownx.progressbar', 'pymdownx.smartsymbols',
-                                   'pymdownx.tasklist', 'pymdownx.inlinehilite'],
+                                   'pymdownx.tasklist', 'pymdownx.inlinehilite', 'pymdownx.magiclink'],
     extension_configs = {
     "pymdownx.superfences": superfences,
     "pymdownx.emoji": emoji,
